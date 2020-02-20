@@ -1,0 +1,66 @@
+
+h1{
+background-color:white;
+text-align: center;
+font-size:500%;
+}
+vb.img {
+float:left;
+padding:0 20px 20px 0;
+}
+
+header {
+	background-color: gray;
+	padding:2px;
+	font-size:35px;
+	text-align:center;
+	color:white;
+}
+nav {
+	font-size:25px;
+	overflow: hidden;
+	background-color:pink;
+}
+
+pre {
+	font-size:25px;
+	padding:70px;
+	font-style:italic;
+	text-align:center;
+}
+pre{
+	background-position:center;
+	background-color:tomato;
+}
+.active {
+  overflow:hidden;
+  background-color:#66b3ff
+;
+
+}
+
+.active a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active a.active {
+  background-color:pink;
+  color: white;
+}
+footer {
+	background-color:gray;
+	padding:2px;
+	font-size:20px;
+	text-align:right;
+	color:white;
+	}
