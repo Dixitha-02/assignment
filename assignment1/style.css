@@ -1,9 +1,52 @@
 
- .button {
-     width:5;
-     height:5; 
+ .textview 
+ {
+     background-color: papayawhip;
+     padding-left: 0px;
+     padding-right: 0px;
+     padding-top: 19px;
+     border-top-left-radius:8px;
+     border-top-right-radius:8px;
+     text-align: right;
+     font-size:19px;
+
+     
  }
- table{
-     border:1px solid black;
-     background-origin: padding-box;
+ .tabl-p
+ {
+     border: 1px solid black;
+     background-color: darkslategray;
+    padding: 13px; 
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+
+    
  }
+ .button
+ {
+            width:49px;
+            height:42px;
+            font-size:20px;
+            font-style: italic;
+        }
+.c1{
+    text-align:center;
+    padding-top:50px;
+}
+.c2 {
+    text-align: center;
+    padding-left:41%;
+}
+
+body {
+    align: center;
+    background-size: 100%;
+    background-repeat: repeat;
+    background-image: radial-gradient(rgb(29, 160, 236), rgb(0, 128, 32));
+}
+h1{
+    text-align: center;
+    padding-top: 2%;
+    font-style: initial;
+    font-size: 35px;
+}
