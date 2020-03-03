@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\work\Assign\assignment\assignment3\style.css">
+    <title>To-do List</title>
+    
+    <script>
+        function createNewElement()
+        {
+    var li= document.createElement("li");
+    var input= document.getElementById("i/p".value);
+    var txtnode=document.createTextNode(input);
+    li.appendChild(txtnode);
+        document.getElementsById("the-ul").appendChild(li);
+        } 
+    </script>
+
+</head>
+<body>
+    <div class="cars">
+     <h2> Enter your favorite cars</h2>
+    <input id="i/p" type="text" name="text">
+    <input type="button" value="Add" onclick="createNewElement()">
+
+    </div>
+    <div class="list">
+    <ul id="the-ul">
+        <li>Audi</li>
+        <li>Lamborghini</li>
+        <li>benz</li>
+        <li>BMW</li>
+        <li>cruze</li>
+    </ul>
+</div>
+</body>
+</html>

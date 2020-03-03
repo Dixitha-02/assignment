@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithematic</title>
+    <style>
+        button {
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+    
+    <script>
+        var a = 10;
+        var b = 20;
+        
+        function add()
+        {
+            var c=a+b;
+            document.write(c);
+        } 
+        function sub(){
+            var c=a-b;
+            document.write(c);
+        }
+        function div(){
+            var c = a/b;
+            document.write(c);
+        }
+        function mul(){
+            var c = a*b;
+            document.write(c);
+        }
+        function pow(){
+            var c = Math.pow(a,b);
+            document.write(c);
+        }
+        
+
+
+    </script>
+</head>
+<body>
+    <h2> Arithematic operations</h2>
+    <input type="button" onclick="add()" value="Add">
+    <input type="button" onclick="sub()" value="Sub">
+    <input type="button" onclick="div()" value="Div">
+    <input type="button" onclick="mul()" value="Mul">
+    <input type="button" onclick="pow()" value="Pow">
+    
+
+
+    
+</body>
+</html>
