@@ -7,10 +7,10 @@
     <title>To-do List</title>
     
     <script>
-        function createNewElement()
+         createNewElement = () =>
         {
     var li= document.createElement("li");
-    var input= document.getElementById("i/p".value);
+    var input= document.getElementById("i/p").value;
     var txtnode=document.createTextNode(input);
     li.appendChild(txtnode);
         document.getElementsById("the-ul").appendChild(li);
@@ -23,8 +23,8 @@
      <h2> Enter your favorite cars</h2>
     <input id="i/p" type="text" name="text">
     <input type="button" value="Add" onclick="createNewElement()">
-
     </div>
+
     <div class="list">
     <ul id="the-ul">
         <li>Audi</li>

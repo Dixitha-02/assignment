@@ -12,27 +12,54 @@
     </style>
     
     <script>
-        var a = 10;
-        var b = 20;
+        var a;
+        var b;
+        
         
         function add()
         {
+        
+
+            //document.write(c);
+            a=document.getElementById("ip1").value;
+            b=document.getElementById("ip2").value;
+            a=parseInt(a);
+            b=parseInt(b);
+
+           
+
             var c=a+b;
-            document.write(c);
+            document.getElementById("pt").innerHTML= c;
         } 
         function sub(){
+            a=document.getElementById("ip1").value;
+            b=document.getElementById("ip2").value;
+            a=parseInt(a);
+            b=parseInt(b);
             var c=a-b;
-            document.write(c);
+            document.getElementById("pt").innerHTML= c;
         }
         function div(){
+            a=document.getElementById("ip1").value;
+            b=document.getElementById("ip2").value;
+            a=parseInt(a);
+            b=parseInt(b);
             var c = a/b;
             document.write(c);
         }
         function mul(){
+            a=document.getElementById("ip1").value;
+            b=document.getElementById("ip2").value;
+            a=parseInt(a);
+            b=parseInt(b);
             var c = a*b;
             document.write(c);
         }
         function pow(){
+            a=document.getElementById("ip1").value;
+            b=document.getElementById("ip2").value;
+            a=parseInt(a);
+            b=parseInt(b);
             var c = Math.pow(a,b);
             document.write(c);
         }
@@ -43,6 +70,11 @@
 </head>
 <body>
     <h2> Arithematic operations</h2>
+    
+    <input type="text" name="input1" id="ip1">
+    
+    <input type="text" name="input2" id="ip2"> <br/> <br/>
+
     <input type="button" onclick="add()" value="Add">
     <input type="button" onclick="sub()" value="Sub">
     <input type="button" onclick="div()" value="Div">
@@ -50,7 +82,10 @@
     <input type="button" onclick="pow()" value="Pow">
     
 
-
+    <br/>
+    <div id="pt">
+        
+    </div>
     
 </body>
 </html>
