@@ -1,0 +1,48 @@
+#ip{
+    padding-left:36%;
+    padding-top:10%;
+    
+} 
+#main{
+    padding-top: 1%;
+}
+body{
+    background-color: bisque;
+    cursor: grab;
+}
+#list{
+    font-size:large;
+    font-weight: 500;
+    border: black;
+    border-color: chartreuse;
+}
+
+ol {
+    background-color: darksalmon;
+    padding: 11px;
+}
+ol li{
+    background-color: pink;
+    margin:5px;
+    padding-left:0;
+}
+
+#txt {
+    background-color:lightblue;
+    padding: 7px;
+    padding-left:12px;
+    padding-right: 12px;
+    font-size: 18px;
+    
+}
+#but{
+    background-color: cornsilk;
+    width: 70px;
+    height: 30px;
+    border-color:darksalmon;
+    border-radius:15px;
+}
+h2{
+    font-size: 30px;
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="style" href=""> -->
+    <title>todo-list</title>
+    <style>
+
+       
+    </style>
+</head>
+
+
+
+<body>
+    
+    <div id="ip" >
+    <h2 style="padding-left: 11%"><b>Todo-list</b> </h2>  
+    <input type="text" id="txt" placeholder="enter">
+    <input type="button" id="but" value=" Add" onclick="addelement()">
+    <input type="button" id="but" value="Edit" onclick="edit()">
+    <input type="button" id="but" value="Remove" onclick="remove()">
+    </div>
+    <div id="main">
+
+    
+    <ol id="list" style="padding-left: 40%">
+       <!-- <i>
+    <div><li>BMW</li><input type="button" value="Edit" onclick="edit()"> </div>
+        <li>Cruze</li>
+        <li>Audi</li>
+        <li>Lamborghini</li>
+        <li>MG</li></i>-->
+    </ol>
+    </div>
+    <script>
+        
+        let input = document.getElementById("txt"),
+              items = document.querySelectorAll("#list li"),
+             node = [], index;
+        for(let i = 0; i < items.length; i++){
+             node.push(items[i].innerHTML);
+         }
+         
+
+         for(let i = 0; i < items.length; i++){
+             
+             items[i].onclick = function()
+             {
+                 index = node.indexOf(this.innerHTML);
+                 console.log(this.innerHTML + " INDEX = " + index);
+                 input.value = this.innerHTML;
+             };
+             
+         }
+        
+         refresh=()=>
+        {
+        
+            node.length = 0;
+            items = document.querySelectorAll("#list li");
+        
+            for(let i = 0; i < items.length; i++){
+             node.push(items[i].innerHTML);
+           }
+        }
+        addelement = ()=>
+        {
+            
+            var listNode = document.getElementById("list");
+            var textNode = document.createTextNode(input.value);
+            var liNode = document.createElement("LI");
+                
+              
+                liNode.appendChild(textNode);
+                listNode.appendChild(liNode);
+              
+               
+                
+                refresh();
+                
+               liNode.onclick = () =>
+                {
+                index = node.indexOf(liNode.innerHTML);
+                console.log(liNode.innerHTML + " INDEX = " + index);
+                input.value = liNode.innerHTML;
+                
+
+             };
+                
+         }
+         
+         edit= ()=> { 
+             
+            items[index].innerHTML = input.value;
+            refresh();
+         
+          }
+          
+           remove= ()=> {
+              
+                  refresh();
+                  if(items.length > 0){
+                      items[index].parentNode.removeChild(items[index]);
+                      input.value = "";
+                  }
+          }
+        
+    </script>
+    
+</body>
+</html>
